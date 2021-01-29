@@ -1,47 +1,429 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-        <!-- Favicon -->
-        <link  rel="icon"   href="/img/site/favicon-sjt.png" type="image/png" />
+    <!-- Favicon -->
+    <link rel="icon" href="/img/site/favicon-sjt.png" type="image/png" />
 
-    
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-    
-        <!-- Normalize -->
-        <link rel="stylesheet" href="/style/normalize.css">
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
 
-        <!-- Personales -->
-        <link rel="stylesheet" href="/style/style-global.css">
-        <link rel="stylesheet" href="/style/botones.css">
-        <link rel="stylesheet" href="/style/header.css">
-        <link rel="stylesheet" href="/style/slider.css">
-        <link rel="stylesheet" href="/style/tira.css">
-        <link rel="stylesheet" href="/style/table.css">
-        <link rel="stylesheet" href="/style/footer.css">
-        <link rel="stylesheet" href="/style/flotantes.css">
+    <!-- Normalize -->
+    <link rel="stylesheet" href="/style/normalize.css" />
 
-    
-        <!-- OWL Carrousel -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <!-- Personales -->
+    <link rel="stylesheet" href="/style/style-global.css" />
+    <link rel="stylesheet" href="/style/botones.css" />
+    <link rel="stylesheet" href="/style/header.css" />
+    <link rel="stylesheet" href="/style/slider.css" />
+    <link rel="stylesheet" href="/style/tira.css" />
+    <link rel="stylesheet" href="/style/table.css" />
+    <link rel="stylesheet" href="/style/footer.css" />
+    <link rel="stylesheet" href="/style/flotantes.css" />
 
+    <!-- OWL Carrousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+      crossorigin="anonymous"
+    />
 
-    <title>Salud Segura - Clinica San Judas Tadeo</title>
-</head>
-<body>
-    
-<header>
-    <nav class="header">
+    <title>Cancer de Mama - Clinica San Judas Tadeo</title>
+  </head>
+  <body>
+    <header>
+      <nav class="header">
         <div class="container header-container">
-            <a href="#">
-                <img src="/img/site/Logo-a-colores-SJT.png" alt="Logo San Judas Tadeo" class="header-logo">
-            </a>
-            <button class="header-boton button">Solicitar Información</button>
+          <a href="#">
+            <img
+              src="/img/site/Logo-a-colores-SJT.png"
+              alt="Logo San Judas Tadeo"
+              class="header-logo"
+            />
+          </a>
+          <button class="header-boton button">Solicitar Información</button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Modal de formulario -->
+
+      <!-- Fin Modal formulario -->
+
+      <!-- Slider -->
+      <section class="slider">
+        <div class="bck-slider">
+          <div class="loop owl-carousel owl-theme">
+            <!-- Slider 1  -->
+            <div class="item flex slide-1">
+              <div class="container flex container-slider">
+                <div class="col-2 slider-img">
+                  <img src="/img/slider/lazo-rosa.png" alt="Lazo rosa" />
+                </div>
+                <div class="col-2">
+                  <div class="container-pill">
+                    <p
+                      class="slider-pill"
+                      style="
+                        background-color: #ff5c87;
+                        color: #fff;
+                        border: 1px solid #fff;
+                        font-size: 20px;
+                        font-weight: 400;
+                      "
+                    >
+                      #YoMeLoTomoAPecho
+                    </p>
+                  </div>
+                  <h1>
+                    Campaña<br />
+                    Cáncer de Mama
+                  </h1>
+                  <p class="slider-txt">
+                    En la Clínica San Judas Tadeo nos tomamos a pecho la lucha
+                    contra el cáncer. Por ello, este año ponemos a tu
+                    disposición el chequeo preventivo a un precio especial.
+                    Realiza tu Chequeo Preventivo en uno de los centros de salud
+                    mas importantes de San Miguel.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slider 2  -->
+            <div class="item flex slide-2">
+              <div class="container flex container-slider">
+                <div class="col-2 slider-img">
+                  <img src="/img/slider/mamografo.png" alt="Mamografo" width="90%" />
+                </div>
+                <div class="col-2">
+                  <!-- <div class="container-pill">
+                    <p class="slider-pill">
+                      <i class="fas fa-user-md"></i> Plan Médico Familiar
+                    </p>
+                  </div> -->
+                  <h2><span class="equipo-slider"></span>Equipos de</span><br>Última Generación</h2>
+                  <p class="slider-txt">
+                    La Clínica San Judas Tadeo cuenta con un convenio con Resocentro, el mejor centro de imágenes de Lima. 
+                  </p>
+                  <p class="slider-txt">
+                    Realízate tu mamografía y ecografía en nuestras instalaciones con el respaldo de de Resocentro.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- Slider 3  -->
+            <div class="item flex slide-3">
+              <div class="container flex container-slider">
+                <div class="col-2 slider-img">
+                  <img src="/img/slider/img-slider2-Medicos-.png" alt="Médicos" />
+                </div>
+                <div class="col-2">
+                  <!-- <div class="container-pill">
+                    <p class="slider-pill">
+                      <i class="fas fa-user-md"></i> Plan Médico Familiar
+                    </p>
+                  </div> -->
+                  <h2>Staff e Infraestructura de Primer Nivel</h2>
+                  <p class="slider-txt">
+                    Contamos con un Staff medico, técnicos y enfermeras altamente capacitado y dispuesto a atenderte y asesorarte en tus necesidades. 
+
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    <!-- tira slider (debajo del slider) -->
+    <section class="tira-slider container">
+        <div class="container tira-item">
+            <div class="tira-img">
+                <img src="/img/icons/tira/icon1-escudo.svg" alt="" class="tira-icono">
+            </div>
+            <div class="tira-text">
+                <p class="tira-item-txt">
+                    <strong>EQUIPOS</strong>
+                    <br>De última generación
+ 
+                </p>
+            </div>
+        </div>
+        <!-- 2 -->
+        <div class="container tira-item">
+            <div class="tira-img">
+                <img src="/img/icons/tira/icon3-estetoscopio.svg" alt="" class="tira-icono">
+            </div>
+            <div class="tira-text">
+                <p class="tira-item-txt">
+                    <strong>CHEQUEO PREVENTIVOS</strong>
+                    <br>
+                    Despistaje de cáncer
+                </p>
+            </div>
+        </div>
+        <!-- 3 -->
+        <div class="container tira-item">
+            <div class="tira-img">
+                <img src="/img/icons/tira/icon4-manos.svg" alt="" class="tira-icono">
+            </div>
+            <div class="tira-text">
+                <p class="tira-item-txt">
+                    <strong>STAFF</strong>
+                    <br>
+                    Médicos especializados
+                </p>
+            </div>
+        </div>
+        <!-- 4 -->
+        <div class="container tira-item">
+            <div class="tira-img">
+                <img src="/img/icons/tira/icon2-gps-.svg" alt="" class="tira-icono">
+            </div>
+            <div class="tira-text">
+                <p class="tira-item-txt">
+                    <strong>PRECIOS</strong>
+                    <br>
+                    Competitivos
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ¿Por qué tengo que hacerme un Chequeo... -->
+    <section class="porque">
+        <div class="container p-100b">
+            <h3>¿Por qué tengo que hacerme un Chequeo Preventivo de Cáncer de Mama anualmente?</h3>
+            <img src="/img/site/barra.png" alt="" class="barra-colores">
+            <div class="porque-container">
+                <div class="col-2">
+                    <div class="porque-text">
+                        <p>El cáncer de mama es una de las enfermedades más frecuentes en mujeres de todo el mundo. La detección temprana es clave para su tratamiento, por eso, es importante que todas las mujeres se realicen periódicamente un chequeo anual.</p>
+                        
+                        <p>Sabemos que muchas mujeres sienten miedo de ser detectadas con cáncer de mama, siendo éste el principal impedimento para realizarse una mamografía. Sin embargo, debes superar esta barrera dándote cuenta de que podría ser la peor decisión para su bienestar y salud.</p>
+        
+                        <p>El tratamiento del cáncer es exitoso en más del 90% de los casos si es detectado en una etapa inicial.</p>
+                    </div>
+                </div>
+                <div class="col-2 video-responsive">
+                    <video class="video"  controls>
+                        <source src="/video/video.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chequeo Preventivo de Cáncer de Mama​ -->
+    <section class="servicios">
+        <div class="container p-100">
+            <h4 class="center">Chequeo Preventivo de Cáncer de Mama​</h4>
+            <img src="/img/site/barra.png" alt="" class="barra-colores barra-center">
+            <p class="subtitle center p-200x">
+                ¡Prevenir es salud!. No dejes pasar más días y pide un chequeo preventivo para la detección temprana de cáncer de mama.
+            </p>
+            <div class="tab-servicios">
+                <p>Tab Servicios</p>
+            </div>
 
         </div>
-    </nav>
+    </section>
 
-</header>
+
+    </main>
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+    <footer>
+      <div class="container footer-grid">
+        <div class="">
+          <h5>Sede Principal</h5>
+          <p class="flex">
+            <i class="fas fa-map-marker-alt"></i> Calle Manuel Raygada 170 - San
+            Miguel
+          </p>
+          <p class="flex">
+            <i class="far fa-check-circle"></i>
+            Lunes a Viernes
+            <br />
+            De 7:45 am a 8:30 pm
+          </p>
+          <p class="flex">
+            <i class="far fa-check-circle"></i> Sábados De 7:45 am a 7:00 pm
+          </p>
+        </div>
+        <div class="">
+          <h5>Sede Anexo 2</h5>
+          <p class="flex">
+            <i class="fas fa-map-marker-alt"></i> Laureano Martínez 140 - San
+            Miguel
+          </p>
+          <p class="flex">
+            <i class="far fa-check-circle"></i>
+            Lunes a Viernes
+            <br />
+            De 8:00 am a 7:00 pm
+          </p>
+          <p class="flex">
+            <i class="far fa-check-circle"></i> Sábados De 8:00 am a 6:00 pm
+          </p>
+        </div>
+
+        <div class="">
+          <h5>Contacto</h5>
+          <p class="flex">
+            <i class="fas fa-phone-alt"> </i>
+            <!-- Nuestra Central Telefónica
+                <br> -->
+            (01) 219-1111
+          </p>
+          <p class="flex">
+            <i class="fab fa-whatsapp" style="font-size: 22px"> </i>
+            51 946 361 875
+          </p>
+          <h5 style="font-size: 18px">Siguenos en nuestras redes</h5>
+          <div class="flex footer">
+            <a
+              href="https://www.facebook.com/sanjudastadeoclinica"
+              class="linkSocial"
+              target="”_blank”"
+            >
+              <img
+                src="/img/icons/site/Footer/iconFacebook.svg"
+                alt=""
+                height="auto"
+                width="auto"
+                loading="lazy"
+              />
+            </a>
+            <a
+              href="https://www.instagram.com/clinica_sanjudastadeo"
+              class="linkSocial"
+              target="”_blank”"
+            >
+              <img
+                src="/img/icons/site/Footer/iconInstagram.svg"
+                alt=""
+                height="auto"
+                width="auto"
+                loading="lazy"
+              />
+            </a>
+            <a
+              href="https://pe.linkedin.com/company/cl%C3%ADnica-san-judas-tadeo"
+              class="linkSocial"
+              target="”_blank”"
+            >
+              <img
+                src="/img/icons/site/Footer/iconLinkedin.svg"
+                alt=""
+                height="auto"
+                width="auto"
+                loading="lazy"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="line footer"></div>
+      </div>
+      <div class="container">
+        <div class="col-2 copy">
+          <p style="color: rgba(255, 255, 255, 0.4)">
+            © 2020 - clinicasanjudastadeo.com.pe
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Botones flotantes  -->
+    <div class="btn-fixed">
+      <a href="#" target="”_blank”">
+        <div class="container-ico-flotante latidos" id="button-p">
+          <img
+            src="/img/icons/flotantes/WhatsApp.svg"
+            alt="icono de WhatsApp"
+            class="ico-whatsapp"
+          />
+        </div>
+      </a>
+      <!-- messenger -->
+      <a
+        href="https://www.messenger.com/t/sanjudastadeoclinica"
+        target="”_blank”"
+      >
+        <div class="container-ico-flotante" id="button-p">
+          <img
+            src="/img/icons/flotantes/Messenger.svg"
+            alt="Icono de Messenger"
+            class="ico-whatsapp"
+          />
+        </div>
+      </a>
+      <!-- <div class="button" id="open-modal">
+        Solicitar cotización
+    </div> -->
+    </div>
+
+    <!-- JQuery -->
+    <script src="/script/jquery3.5.1.js"></script>
+
+    <!-- Owl -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Script Personales -->
+    <script src="/script/scripts.js"></script>
+
+    <script>
+      jQuery(document).ready(function ($) {
+        $(".loop").owlCarousel({
+          center: true,
+          items: 1,
+          loop: true,
+          margin: 10,
+          lazyLoad: true,
+          autoplay: false,
+          autoplayTimeout: 6000,
+          autoplayHoverPause: true,
+          nav: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 1,
+            },
+            1000: {
+              items: 1,
+            },
+          },
+        });
+      });
+    </script>
+  </body>
+</html>

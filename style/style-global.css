@@ -263,3 +263,10 @@ section.tira-intermedia:after {
     line-height   : 2em;
     padding-bottom: 1em;
 }
+
+
+/* servicios */
+
+section.servicios {
+    background-image: url(/img/icons/dot.png);
+}
