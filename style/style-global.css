@@ -1,0 +1,265 @@
+*{
+    box-sizing: border-box;
+    padding   : 0;
+    margin    : 0;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Poppins:wght@400;700&display=swap');
+
+:root {
+    --max-width: 1200px;
+
+    --primary-color      : #3E87C7;
+    --primary-color-alt  : #053157;
+    --secundary-color    : #E00031;
+    --secundary-color-alt: #C2012B;
+    --color-body         : #2A3B47;
+    
+    --font-family-title: 'Poppins',     sans-serif;
+    --font-family-body : 'Nunito Sans', sans-serif;
+
+    /* Tamaños */
+    --header-height: 4rem;
+
+    /* Tamaño de fuentes */
+    --h1-font-size     : 3.625rem;
+    --h2-font-size     : 3.625rem;
+    --h3-font-size     : 2.8rem;
+    --h4-font-size     : 2.25rem;
+    --h5-font-size     : 1.375rem;
+    --normal-font-size : 1.125rem;
+    --small-font-size  : 1rem;
+    --smaller-font-size: 0.6875rem;
+    /* --menu-font-size   : 0.875rem; */
+
+    /* Capas */
+    --z-back      : -10;
+    --z-normal    : 1;
+    --z-front     : 10;
+    --z-tooltip   : 20;
+    --z-overlay   : 30;
+    --z-modal     : 40;
+    --z-fixed     : 50;
+    --z-off-canvas: 100;
+
+
+    /* Otros */
+    --borde-marca  : rgba(192, 204, 218, 0.6);
+    --border-radius: .5rem;
+}
+
+@media(max-width:767px) {
+
+}
+
+body{
+    font-family   : var(--font-family-body);
+    display       : flex;
+    flex-direction: column;
+    color         : var(--color-body);
+    font-size     : var(--normal-font-size);
+    font-weight   : 400;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-family-title);
+    margin-top : 0;
+    font-weight: 700;
+    line-height: 1;
+}
+
+
+h1 {
+    font-size    : var(--h1-font-size);
+    margin-bottom: 1rem;
+    color        : #fff;
+    text-align   : left;
+}
+
+h2 {
+    font-size: var(--h2-font-size);
+}
+
+h3 {
+    font-size: var(--h3-font-size);
+    color    : var(--primary-color);
+}
+
+h4 {
+    font-size: var(--h4-font-size);
+    color    : var(--primary-color);
+} 
+
+h5 {
+    font-size: var(--h5-font-size);
+} 
+
+p {
+    line-height   : 1.5rem;
+    padding-bottom: 18px;
+}
+
+.img {
+    border-radius: .5rem;
+}
+
+
+
+/* Shortcode */
+.center {
+    text-align: center;
+}
+
+.negrita {
+    font-size     : 20px;
+    padding-bottom: 10px;
+    font-weight   : 700;
+}
+
+.container{
+    width       : calc(100% - 2rem);
+    max-width   : var(--max-width);
+    margin-left : auto;
+    margin-right: auto;
+}
+
+.flex {
+    display    : flex;
+    align-items: center;
+}
+
+.col-2 {
+    width    : 50%;
+    max-width: 50%;
+}
+
+.col-3 {
+    width: 33.33%;
+}
+
+.p-100 {
+    padding-bottom: 100px;
+    padding-top   : 100px;
+}
+
+.p-100b{
+    padding-bottom: 100px;
+}
+
+
+
+.barra-colores{
+    padding-bottom: 32px;
+    padding-top   : 16px;
+}
+
+.barra-center {
+    margin : auto;
+    display: block;
+}
+
+.subtitle {
+    font-weight   : 700 ;
+    padding-bottom: 50px;
+}
+
+/* header:  tiene su propia hoja de estilos 
+
+ NAVBAR 
+
+ SLIDER */
+
+
+
+/* PORQUE */
+
+.porque .porque-container{
+    display    : flex;
+    align-items: center;
+    flex-wrap  : nowrap;
+}
+
+.porque .porque-text {
+    padding-right: 2rem;
+}
+
+.porque .video-responsive {
+    width : 100%;
+    height: 100%;
+}
+.porque .video-responsive video{
+    border: 2px solid #2a3b4754;
+}
+
+.porque .video {
+    width : 550px;
+    height: 320px;
+}
+
+
+/* Tira Intermedia  */
+
+section.tira-intermedia {
+    position: relative;
+    padding : 4em 0;
+}
+
+section.tira-intermedia:after {
+    background-image: url("/img/images/fondo\ rayas.png");
+    content         : "";
+    display         : block;
+    position        : absolute;
+    top             : 0;
+    left            : 0;
+    width           : 100%;
+    height          : 100%;
+    opacity         : 0.1;
+    z-index         : var(--z-back);
+}
+
+.tira-intermedia .numero{
+    color         : var(--secundary-color);
+    font-size     : 52px;
+    font-weight   : 700;
+    padding-bottom: 40px;
+}
+
+.tira-intermedia .text {
+    justify-content: center;
+}
+
+.tira-intermedia p {
+    padding    : 0;
+    font-weight: 700;
+    text-align : center;
+}
+
+.tira-intermedia i.fas.fa-briefcase, .tira-intermedia i.fas.fa-user-friends, .tira-intermedia i.fas.fa-check-circle {
+    font-size: 36px;
+    padding-right: 20px;
+    color: var(--primary-color);
+}
+
+/* incluyen  */
+
+.incluyen .subtitle {
+    padding-right: 8em;
+}
+
+.incluyen .lista {
+    padding-left: 4em;
+}
+
+.incluyen ul {
+    padding-left  : 2em;
+    line-height   : 2em;
+    padding-bottom: 1em;
+}
